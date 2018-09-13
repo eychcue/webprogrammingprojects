@@ -6,6 +6,11 @@ body{
     padding-right: 100px;
 }
 
+#logo{
+    width: 80%;
+    padding-left: 30px;
+}
+
 .login{
 	background: darkgrey;
     font-family: sans-serif;
@@ -51,15 +56,22 @@ body{
 	color: orangered;
 }
 
-#login_button {
-    background: red;
+.login_button a:link, a:visited{
+	background: red;
     color: white;
-    font-size: 15px;
-    width: 95%;
-    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 80%;
+    padding: 15px 25px;
+    margin-left: 6px;
     border: 0;
-    border-radius: 5px;
-    margin-left: 10px;
+    border-radius: 4px;
+}
+
+.login_button a:hover, a:active{
+	background-color: red;
 }
 
 @media only screen and (max-width:800px) {
