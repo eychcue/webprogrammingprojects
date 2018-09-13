@@ -161,3 +161,8 @@ a.balance:hover{
     border-radius: 6px;
     letter-spacing: 4px;
 }
+
+p.quote {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

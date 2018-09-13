@@ -6,10 +6,12 @@ body
 	background-image:url(img/background-slot.jpg);
     background-color:#d14728;
     text-align: center;
-	margin-top:55px;
+    margin: 0px;
+    font-family: helvetica;
 }
 
 .slot-Machine{
+    margin: 40px;
     display: inline-block;
     max-width: 600px;
     max-height: 100%;
@@ -370,4 +372,55 @@ body
       box-shadow: 0 5px #006034;
       transform: translateY(4px);
     }
+}
+/* added code by haroon */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    color: #f84854;
+}
+
+.topnav a.active {
+    color: #f84854;
+}
+
+a.addcash {
+    float: right;
+    background: green;
+    border-radius: 5px;
+    margin-right: 2%;
+}
+
+a.addcash:hover {
+    font-size: 110%;
+    color: white;   
+}
+
+a.balance {
+    float: right;
+    background: #423f3f;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 1%;
+    border-radius: 5px;
+}
+
+a.balance:hover{ 
+    color:white;
 }
