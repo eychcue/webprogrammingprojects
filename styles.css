@@ -1,0 +1,179 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body 
+{
+	background-image:url(img/background-slot.jpg);
+    background-color:#d14728;
+    text-align: center;
+	margin-top:55px;
+}
+
+.slot-Machine{
+    display: inline-block;
+    max-width: 600px;
+    max-height: 100%;
+	width:100%;
+	background-color:#424143;
+	padding:35px;
+	padding-top:15px;
+	border-radius:15px;
+}
+.slot-Machine img {
+    border: 9px solid #424143;
+    padding:0px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.images
+{   
+     display: inline-block;
+     
+     
+}
+.header img{
+	width:350px;
+	height:50%;
+}
+
+.cherry
+{
+    background-color: white;
+    float: left;
+    width: 150px;
+    height: 150px;
+}
+.Seven
+{
+    background-color: white;
+    float :left;
+    width: 150px;
+    height: 150px;
+}
+.Bell
+{
+    background-color: white;
+    float :left;
+    width: 150px;
+    height: 150px;
+}
+.slot{
+	width:40px;
+	height:40px;
+    float :left;
+}
+.slot:hover{
+	 position: relative;
+    -webkit-animation-duration: 1s;  /* Safari 4.0 - 8.0 */    
+    -webkit-animation-delay: 0s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-fill-mode: backwards; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 1s;    
+    animation-delay: 0s;
+    animation-fill-mode: backwards;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    from {top: 0px;}
+    to {top: 100px;}
+}
+
+@keyframes example {
+    from {top: 0px;}
+    to {top: 100px;}
+}
+
+
+.credits{
+	display:flex;
+	text-align:center;
+}
+.credits #credit{
+	font-size:55px;
+    color:#f7941d;
+    border: 15px solid #424143;
+	background-color:#424143;
+	text-align:left;
+	width:100%;
+}
+.credits #bet{
+	font-size:55px;
+    color:#f7941d;
+    border: 15px solid #424143;
+	background-color:#424143;
+	width:100%;
+	text-align:right;
+
+}
+
+.buttons{
+    text-align: right;
+
+
+}
+.BetOne {
+  float :right;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  background-color: #d14728;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #b23616;
+  color:#f7941d;
+}
+.BetOne:hover {background-color: #d14728}
+
+.BetOne:active {
+  background-color: #d14728;
+  box-shadow: 0 5px #912B11;
+  transform: translateY(4px);
+}
+.BetMax {
+  
+  float :right;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  background-color: #d14728;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #b23616;
+  color:#f7941d;
+}
+.BetMax:hover {background-color: #d14728}
+
+.BetMax:active {
+  background-color: #d14728;
+  box-shadow: 0 5px #912B11;
+  transform: translateY(4px);
+}
+.CashOut {
+  float :left;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  background-color: #5aba48;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #007c44;
+  color:#424143;
+
+}
+.CashOut:hover {background-color:#5aba48;}
+
+.CashOut:active {
+  background-color: #5aba48;
+  box-shadow: 0 5px #006034;
+  transform: translateY(4px);
+}
+
