@@ -1,0 +1,79 @@
+body{
+	background-image: url("jackpot2.jpeg");
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.login{
+	background: darkgrey;
+    font-family: sans-serif;
+    width: 300px;
+    margin: 20px auto;
+    padding: 25px 15px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    opacity: 0.7;
+}
+
+#login_title{
+    font-size: 25px;
+    text-align: center;
+    margin-top: -10px;
+    color: orangered;
+}
+
+.login_values{
+    font-size: 15px;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    width: 270px;
+    height: 45px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.login_values:foucs {
+	border-color: red;
+	outline: none;
+}
+
+#Remember_Me{
+	margin-left: 13px;
+	margin-bottom: 20px;
+	color: grey;
+}
+
+#Remember_Me_Word{
+	color: orangered;
+}
+
+#login_button {
+    background: red;
+    color: white;
+    font-size: 15px;
+    width: 95%;
+    height: 50px;
+    border: 0;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  body{
+  	width: 70%
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  body{
+    width: 50%;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+}
