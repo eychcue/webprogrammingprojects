@@ -52,3 +52,16 @@ button {
 button:hover {
     background-color: salmon;
 }
+
+select.custom-select {
+    background-color: #f84854;
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px;
+    cursor: pointer;
+    border-radius: 8px;
+}
