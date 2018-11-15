@@ -64,4 +64,8 @@ select.custom-select {
     margin: 4px;
     cursor: pointer;
     border-radius: 8px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 15px;
 }
