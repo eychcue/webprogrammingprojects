@@ -1,0 +1,54 @@
+table {
+    background-color: #310303;
+    margin: auto;
+}
+
+h1 {
+color : white;
+}
+
+td {
+    border: 1px solid black;
+    width: 10px;
+    height: 10px;
+}
+
+td.dead {
+    background-color: white;
+}
+
+td.alive {
+    background-color: #f84854;
+    border-radius: 10px;
+}
+
+body{
+    background-image: url("lifePicture.jpeg")
+}
+
+.content {
+    margin: auto;
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+.menus {
+    padding: 12px;
+}
+
+button {
+    background-color: #f84854; /* Green */
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: salmon;
+}
