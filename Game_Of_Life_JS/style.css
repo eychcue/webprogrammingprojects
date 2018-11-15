@@ -74,3 +74,19 @@ select.custom-select {
     appearance: none;
     padding: 15px;
 }
+
+.red-feature{
+    background-color: #f84854;
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+::placeholder{
+    color: white;
+}
