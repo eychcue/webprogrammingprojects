@@ -19,11 +19,19 @@ var boardNextTable = [rows];
 
 
 function changeDimensions(){
-    removeTable("tableId");
     var dimensions = document.getElementById("dimensions").value;
-    rows=dimensions;
-    columns=dimensions;
-    newGame();
+    if(dimensions < 20 || dimensions > 100){
+        do{
+            dimensions=prompt("Enter a number between 20 and 100");
+        }while(dimensions < 20 || dimensions > 100);
+        
+    }
+        number=dimensions;
+        removeTable("tableId");
+        document.getElementById("dimensions").value="";
+        rows=dimensions;
+        columns=dimensions;
+        newGame(); 
 }
 
 //Setup the rows and columns board with the input number prompt
