@@ -104,8 +104,8 @@ function setCellAlive(row, col) {
 //Pattern: Block
 function blockPattern() {
     var cellsList = document.getElementsByClassName("alive");
-    var row = Math.floor(Math.random()* 10)+1 ;
-    var col = Math.floor(Math.random()* 10)+1 ;
+    var row = Math.floor(Math.random()* (number-2))+1 ;
+    var col = Math.floor(Math.random()* (number-2))+1 ;
 
     
     setCellAlive(row, col);
@@ -119,13 +119,13 @@ function blockPattern() {
 //Pattern: Blinker
 function blinkerPattern() {
     var cellsList = document.getElementsByClassName("alive");
-    var row = Math.floor(Math.random()* 10)+1 ;
-    var col = Math.floor(Math.random()* 10)+1 ;
-    console.log(row+ "-" + col);
+    var row = Math.floor(Math.random()* (number-3))+1 ;
+    var col = Math.floor(Math.random()* (number-3))+1 ;
+    console.log(number+","+row+ "-" + col);
   
-    setCellAlive(row, col + 10);
-    setCellAlive(row + 1, col + 10);
-    setCellAlive(row + 2, col + 10);
+    setCellAlive(row, col);
+    setCellAlive(row + 1, col );
+    setCellAlive(row + 2, col );
 
 
     //start();
@@ -135,9 +135,8 @@ function blinkerPattern() {
 //Pattern: Beacon
 function beaconPattern() {
     var cellsList = document.getElementsByClassName("alive");
-    var row = Math.floor(Math.random()* 10)+1 ;
-    var col = Math.floor(Math.random()* 10)+1 ;
-  
+    var row = Math.floor(Math.random()* (number-4))+1 ;
+    var col = Math.floor(Math.random()* (number-4))+1 ;
     setCellAlive(row, col - 1);
     setCellAlive(row, col);
     setCellAlive(row + 1, col -1);
