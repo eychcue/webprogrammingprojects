@@ -4,7 +4,7 @@ table {
 }
 
 h1 {
-color : white;
+color :white;
 }
 
 td {
@@ -51,6 +51,11 @@ button {
 
 button:hover {
     background-color: salmon;
+}
+
+#logo {
+    width: 20%;
+    margin: auto;
 }
 
 select.custom-select {

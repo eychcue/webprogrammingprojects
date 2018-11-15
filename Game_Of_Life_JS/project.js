@@ -1,11 +1,12 @@
-var number = prompt("Enter the number of rows*columns (Minimum is 20)?");
+// var number = prompt("Enter the number of rows*columns (Minimum is 20)?");
 
-if (number < 20) {
-    do {
-        number = prompt("Enter the number of rows*columns (Minimum is 20)?");
-    } while (number < 20);
-}
+// if (number < 20) {
+//     do {
+//         number = prompt("Enter the number of rows*columns (Minimum is 20)?");
+//     } while (number < 20);
+// }
 
+var number = 20;
 var rows = number;
 var columns = number;
 
@@ -15,6 +16,15 @@ var maxGenerations = 23;
 
 var boardTable = [rows];
 var boardNextTable = [rows];
+
+
+function changeDimensions(){
+    removeTable("tableId");
+    var dimensions = document.getElementById("dimensions").value;
+    rows=dimensions;
+    columns=dimensions;
+    newGame();
+}
 
 //Setup the rows and columns board with the input number prompt
 function setupBoard() {
@@ -50,6 +60,7 @@ function duplicateBoard() {
 function showBoard() {
     var tableContainer = document.getElementById("tableContainer");
     var table = document.createElement("table");
+    table.setAttribute("id", "tableId");
 
     //Create the table
     for (var i = 0; i < rows; i++) {
@@ -310,6 +321,12 @@ function completelyClearTable() {
 function resetGame() {
     location.reload();
 }
+
+function removeTable(id){
+        var tbl = document.getElementById(id);
+        if(tbl) tbl.parentNode.removeChild(tbl);
+}
+
 
 function newGame() {
     showBoard();

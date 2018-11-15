@@ -7,7 +7,7 @@
 
 
 <div class="content">
-
+    <img id="logo" src="cherrySlots.png" alt="Cherry Slots Logo">
     <h1>Game of Life</h1>
 
     <div id="tableContainer"></div>
@@ -20,12 +20,16 @@
         <button id="skipMax" onclick="skipMaxGenerations()">+23 Generations</button>
         <button id="reset" onclick="resetGame()">Reset Game</button>
         
-            <select class="custom-select" title="values" onchange="patternSelect(this.value)">
-                <option selected disabled>Choose Pattern</option>
-                <option>Block</option>
-                <option>Blinker</option>
-                <option>Beacon</option>
-            </select>
+        <select class="custom-select" title="values" onchange="patternSelect(this.value)">
+            <option selected disabled>Choose Pattern</option>
+            <option>Block</option>
+            <option>Blinker</option>
+            <option>Beacon</option>
+        </select>
+        
+        
+        <input id="dimensions" type="text" onchange="changeDimensions(this.value)">
+            
     </div>
     <script type="text/javascript" src="project.js"></script>
 
