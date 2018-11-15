@@ -6,7 +6,6 @@ if (number < 20) {
     } while (number < 20);
 }
 
-
 var rows = number;
 var columns = number;
 
